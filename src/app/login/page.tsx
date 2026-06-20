@@ -1,12 +1,22 @@
 export default function LoginPage() {
-  return (
-    <div>
-      <h1>Login</h1>
+  async function formAction(formData: FormData) {
+    "use server";
+    const rawFormData = {
+      email: formData.get("email"),
+      password: formData.get("password"),
+    };
 
+    if (!rawFormData) {
+      return;
+    }
+  }
+  return (
+    <form action={formAction}>
+      <h1>Login</h1>
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />
 
-      <button>Login</button>
-    </div>
+      <button type="submit">Login</button>
+    </form>
   );
 }
