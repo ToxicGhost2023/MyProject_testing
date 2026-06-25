@@ -1,0 +1,29 @@
+# وابستگی‌ها
+**/node_modules/
+npm-debug.log
+yarn-error.log
+.cache
+
+# اطلاعات محرمانه
+.env
+.aws
+.npmrc
+
+# تاریخچه گیت و تنظیمات IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# فایل‌های تست و گزارش
+coverage/
+.nyc_output/
+.pytest_cache/
+
+# فایل‌های ساخت
+dist/
+build/
+
+# مستندات و فایل‌های مجوز که در ایمیج نهایی نیازی نیست
+**/README.md
+**/LICENSE
